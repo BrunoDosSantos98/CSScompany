@@ -1,0 +1,22 @@
+.rodape{
+  text-align:center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  background-color: lightgreen;
+}
+
+.rodape_menu{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: lightgreen;
+}
+.rodape_item-menu{
+  display: inline-block;
+}
+.rodape_item-menu a{
+  display: inline-block;
+  padding: 1.86em 1.42em;
+}
