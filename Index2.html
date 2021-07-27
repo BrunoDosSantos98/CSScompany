@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grid Layout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+
+.container{
+display: grid;
+grid-template-areas: "header header header header header header"
+"left left middle middle right right"
+"footer footer footer footer footer footer";
+
+}
+.column{
+background-color: grey;
+margin: 5px 5px;
+height: 200px;
+}
+.header{
+background-color: black;
+color: white;
+grid-area: header;
+text-align: center;
+padding: 20px;
+border-radius: 20px;
+}
+.left{
+grid-area: left;
+}
+.middle{
+grid-area: middle;
+}
+.right{
+grid-area: right;
+}
+.footer{
+grid-area: footer;
+background-color: black;
+color: white;
+text-align: center;
+padding: 15px;
+border-radius: 20px;
+}
+@media(max-width: 600px){
+.container{
+grid-template-areas: 'header header header header header header'
+'left left left left left left'
+'middle middle middle middle middle'
+'right right right right right right'
+'footer footer footer footer footer footer';
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Header</h1>
+</div>
+<div class="column left">Bruno
+</div>
+<div class="column middle">Andre
+</div>
+<div class="column right">Santos
+
+</div>
+<div class="footer">
+Copyrighted
+</div>
+</div>
+</body>
+</html>

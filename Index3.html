@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title></title>
+<style type="text/css">
+body {
+background:black;
+color:grey;
+
+}
+
+button {
+height: 40px;
+margin-left:0%;
+width: 90%;
+margin-top:5%;
+border-radius:4px;
+font-size:18px;
+font-weight:350;
+border:none;
+outline:none;
+background:transparent;
+color:white;
+background:#c73a43;
+}
+
+input {
+padding:10px;
+outline:none;
+font-weight:400;
+color:grey;
+caret-color:#c73a43;
+width:80%;
+height:17px;
+margin-bottom:1em;
+margin-left:0;
+background:transparent;
+border:none;
+border-bottom:2px solid #c73a43;
+}
+
+span#log {
+color:white;
+width:45%;
+margin-top:0 auto;
+float:right;
+margin-right:8%;
+font-family:normal;
+font-size:20px;
+}
+
+p {
+margin-left: 5%;
+float:left;
+width:45%;
+font-family:cursive;
+color:#c73a43;
+font-weight:700;
+font-size:40px;
+}
+
+a {
+color:#c73a43;
+margin:0;
+padding:0;
+font-size:80%;
+float:left;
+margin-bottom:5%;
+
+}
+</style>
+
+</head>
+
+<body>
+<center>
+
+<form method="POST" action="Index.html" onsubmit="return validateForm()">
+<p id="sign">Bruno Dos Santos</a>
+<div style="margin-top:20%;"></div>
+<input type="user" name="user" id="user" placeholder="Username" />
+<br>
+<a id="error-user"></a>
+<input type="tel" name="tel">
